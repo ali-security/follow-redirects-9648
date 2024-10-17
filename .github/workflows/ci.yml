@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/setup-node@v3
         with:
@@ -23,7 +23,7 @@ jobs:
       - run: npm run lint
 
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
       matrix:

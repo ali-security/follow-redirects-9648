@@ -1511,6 +1511,7 @@ describe("follow-redirects", function () {
 
   [
     "Authorization",
+    "Proxy-Authorization",
     "Cookie",
   ].forEach(function (header) {
     describe("when the client passes an header named " + header, function () {
